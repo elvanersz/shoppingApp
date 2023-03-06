@@ -1,17 +1,19 @@
 package com.elvan.shoppingapp.product.service;
 
-import org.springframework.stereotype.Service;
-
+import com.elvan.shoppingapp.product.domain.MoneyTypes;
 import java.math.BigDecimal;
+import org.springframework.stereotype.Service;
 
 @Service
 public class ProductDeliveryService {
 
-    public String getDeliveryInfo(String productId){
+    public String getDeliveryInfo(String productId) {
+        // TODO
         return "Tomorrow";
     }
 
-    public Boolean freeDeliveryCheck(String productId, BigDecimal price){
-        return price.compareTo(BigDecimal.ONE) >= 0;
+    public boolean freeDeliveryCheck(String productId, BigDecimal price, MoneyTypes moneyType) {
+        // TODO
+        return true;
     }
 }

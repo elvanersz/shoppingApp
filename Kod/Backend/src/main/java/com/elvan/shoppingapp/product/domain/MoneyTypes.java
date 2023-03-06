@@ -1,16 +1,19 @@
 package com.elvan.shoppingapp.product.domain;
 
 public enum MoneyTypes {
-
     USD("Dolar", "$"),
-    EUR("Euro", "€"),
-    TL("Türk Lirası", "₺");
+    EUR("Euro", "E"),
+    TL("Turk Lirasi", "T");
 
-    private String label;
-    private String symbol;
+    private String label; // Dollar
+    private String symbol; // $
 
-    MoneyTypes(String label, String symbol){
+    MoneyTypes(String label, String symbol) {
         this.label = label;
         this.symbol = symbol;
+    }
+
+    public String getSymbol() {
+        return symbol;
     }
 }
